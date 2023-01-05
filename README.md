@@ -155,9 +155,9 @@ Grafiğe baktığımızda ,
 
 enerji arttıkça popülerliğin arttığı yüksek enerji yüksek pöpülerlik kısmında yoğunlaşma bulunuyor.
 
-akustik değeri düşük olduğu kısımlarda popülerliğinin yüksek olduğu görülmektedir.
+akustik değerinin düşük olduğu kısımlarda popülerliğin yüksek olduğu görülmektedir.
 
-dans edilebilirlik değer değişsede popülerlik değeri genellikle 80-90 arasında yoğunlanmıştır.
+dans edilebilirlik değeri değişsede popülerlik değeri genellikle 80-90 arasında yoğunlaşmıştır.
 
 desibel değerinin -7.5 ve -2.5 olduğu yerlerde popülerlik değerlerinin yoğunlaştığı görülmektedir.
 
