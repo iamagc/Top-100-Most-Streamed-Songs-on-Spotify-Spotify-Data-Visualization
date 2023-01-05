@@ -1,11 +1,11 @@
 # Spotify'da En Çok Dinlenen 100 Şarkı Veri Setinin Görselleştirilmesi
 
-Bu proje, Eskişehir Teknik Üniversitesi İstatistik Bölümü lisans programında 2022-2023 Güz döneminde yürütülen Veri Görselleştirme dersi dönem sonu   projesi kapsamında yapılmıştır. Spotify tarafından dünyanın en çok dinlenen 100 şarkısı. Bu veri kümesi şarkılarla ilgili çeşitli değişkenlere sahiptir. Bu çalışmada Spotify veri seti veri görselleştirme yöntemleri ile araştırılmıştır. Veri setimizde 100 şarkı ve 14 değişken var. 
+Bu proje, Eskişehir Teknik Üniversitesi İstatistik Bölümü lisans programında 2022-2023 Güz döneminde yürütülen Veri Görselleştirme dersi dönem sonu   projesi kapsamında yapılmıştır. Spotify üzerinden dünyanın en çok dinlenen 100 şarkısı üzerinedir. Bu veri kümesi şarkılarla ilgili çeşitli değişkenlere sahiptir. Bu çalışmada Spotify veri seti çeşitli veri görselleştirme yöntemleri ile araştırılmıştır. Veri setimizde 100 şarkı ve 14 değişken vardır. 
 
 
 ## Veri Seti
 
-Spotify tarafından 1975 ile 2021 arasında dünyada en çok dinlenen 100 şarkı. Bu veri kümesi şarkılarla ilgili çeşitli değişkenlere sahiptir. Bu çalışmada Spotify veri seti veri görselleştirme yöntemleri ile incelenmiştir. Veri setimizde 100 şarkı ve 14 değişken var.
+Spotify üzerinde 1975 ile 2021 yılları arasında dünyada en çok dinlenen 100 şarkının bulunduğu veri seti üzerinde çalışılmıştır. Bu veri kümesi şarkılarla ilgili çeşitli değişkenlere sahiptir. Bu çalışmada Spotify veri seti veri görselleştirme yöntemleri ile incelenmiştir. Veri setimizde 100 şarkı ve 14 değişken var.
 
 Bu projede,
 
@@ -85,7 +85,7 @@ heatmap(new_spo_dataset.cor)
 ![](https://github.com/iamagc/Top-100-Most-Streamed-Songs-on-Spotify-Spotify-Data-Visualization/blob/main/figures/one.png)
 
 
-Grafiğe baktığımızda en yüksek pozitif ilişkinin enerji ve desibel değişkenleri arasında bulunduğu görülmektedir. Enerji ve akustik değişkenleri arasında ise en yüksek negatif ilişki bulunmaktadır. Ayrıca popülarite- bpm  , yıl - enerji ve bpm - yıl değişkeni ikili olarak kendi içlerinde nötr ilişkiye sahiptir.
+Grafiğe baktığımızda en yüksek pozitif ilişkinin enerji ve desibel değişkenleri arasında bulunduğu görülmektedir. En yüksek negatif ilişki ise enerji ve akustik değişkenleri arasında bulunmaktadır. Ayrıca popülarite- bpm  , yıl - enerji ve bpm - yıl değişkenleri ikili olarak kendi içlerinde nötr ilişkiye sahiptir.
 
 
 ### Şekil 2: Popülerlik değişkeni, Scatterplot kullanılarak altı farklı değişkenle karşılaştırılmıştır.
@@ -150,7 +150,7 @@ plott9<-ggplot(spotify_dataframe, aes(x=speechiness, y=popularity))  +
 
 Grafiğe baktığımızda,
 
-Müziğin enerjisi arttıkça popüleritesinin azda olsa düştüğü görülmektedir.
+Müziğin enerjisi arttıkça popüleritesinin az da olsa düştüğü görülmektedir.
 
 Akustik değerinin düşük olduğu kısımlarda popülerliğin yüksek olduğu görülmektedir , akustik değeri arttıkça popülarite artıyor
 
