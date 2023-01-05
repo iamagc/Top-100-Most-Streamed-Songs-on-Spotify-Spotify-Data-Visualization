@@ -83,10 +83,10 @@ grid.arrange( corrplott1,corrplott2,ncol=2,top="Main Title")
 heatmap(new_spo_dataset.cor)
 ```
 
-![](https://github.com/iamagc/Top-100-Most-Streamed-Songs-on-Spotify-Spotify-Data-Visualization/blob/main/plots/1.png)
+![](https://github.com/iamagc/Top-100-Most-Streamed-Songs-on-Spotify-Spotify-Data-Visualization/blob/main/figures/one.png)
 
 
-### Şekil 2: Popülerlik değişkeni, Scatterplot kullanılarak altı farklı değişkenle karşılaştırıldı.
+### Şekil 2: Popülerlik değişkeni, Scatterplot kullanılarak altı farklı değişkenle karşılaştırılmıştır.
 
 ```
 bpm<-spotify_dataframe$beats.per.minute
@@ -144,10 +144,10 @@ plott9<-ggplot(spotify_dataframe, aes(x=speechiness, y=popularity))  +
   
 ```
 
-![](https://github.com/iamagc/Top-100-Most-Streamed-Songs-on-Spotify-Spotify-Data-Visualization/blob/main/plots/2.png)
+![](https://github.com/iamagc/Top-100-Most-Streamed-Songs-on-Spotify-Spotify-Data-Visualization/blob/main/figures/second.png)
 
 
-### Şekil 3: Popülarite, bpm ve enerji değişkenlerinin kesişimi, Upset grafiğiyle karşılaştırıldı.
+### Şekil 3: Popülarite, bpm ve enerji değişkenlerinin kesişimi, Upset grafiğiyle karşılaştırılmıştır.
 
 ```
 install.packages("UpsetR")
@@ -165,9 +165,9 @@ upset(fromList(listInput), order.by = "freq",sets.bar.color=c("maroon","blue","o
 
 ```
 
-![](https://github.com/iamagc/Top-100-Most-Streamed-Songs-on-Spotify-Spotify-Data-Visualization/blob/main/plots/3.png)
+![](https://github.com/iamagc/Top-100-Most-Streamed-Songs-on-Spotify-Spotify-Data-Visualization/blob/main/figures/third.png)
 
-### Şekil 4: En popüler 10 sanatçının popülaritesi karşılaştırılıyor.
+### Şekil 4: En popüler 10 sanatçının popülaritesi karşılaştırılmıştır.
 
 ```
 ggplot(selecteddata1, aes(x = reorder(artist, -popularity), y = popularity)) +
@@ -187,7 +187,7 @@ ggplot(selecteddata1, aes(x = reorder(artist, -popularity), y = popularity)) +
 
 ```
 
-![](https://github.com/iamagc/Top-100-Most-Streamed-Songs-on-Spotify-Spotify-Data-Visualization/blob/main/plots/4.png)
+![](https://github.com/iamagc/Top-100-Most-Streamed-Songs-on-Spotify-Spotify-Data-Visualization/blob/main/figures/fourth.png)
 
 
 
