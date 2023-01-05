@@ -1,6 +1,6 @@
 # Spotify'da En Çok Dinlenen 100 Şarkı Veri Setinin Görselleştirilmesi
 
-Bu proje , Eskişehir Teknik Üniversitesi İstatistik Bölümü lisans programında 2022-2023 Güz döneminde yürütülen Veri Görselleştirme dersi dönem sonu   projesi  kapsamında yapılmıştır. Spotify tarafından dünyanın en çok dinlenen 100 şarkısı. Bu veri kümesi şarkılarla ilgili çeşitli değişkenlere sahiptir. Bu çalışmada Spotify veri seti veri görselleştirme yöntemleri ile araştırılmıştır. Veri setimizde 100 şarkı ve 14 değişken var. 
+Bu proje, Eskişehir Teknik Üniversitesi İstatistik Bölümü lisans programında 2022-2023 Güz döneminde yürütülen Veri Görselleştirme dersi dönem sonu   projesi kapsamında yapılmıştır. Spotify tarafından dünyanın en çok dinlenen 100 şarkısı. Bu veri kümesi şarkılarla ilgili çeşitli değişkenlere sahiptir. Bu çalışmada Spotify veri seti veri görselleştirme yöntemleri ile araştırılmıştır. Veri setimizde 100 şarkı ve 14 değişken var. 
 
 
 ## Veri Seti
@@ -85,7 +85,7 @@ heatmap(new_spo_dataset.cor)
 ![](https://github.com/iamagc/Top-100-Most-Streamed-Songs-on-Spotify-Spotify-Data-Visualization/blob/main/figures/one.png)
 
 
-Grafiğe baktığımızda en yüksek pozitif ilişkinin enerji ve desibel değişkenleri arasında bulunduğu görülmektedir. Enerji ve akustik değişkenleri arasında ise en yüksek negatif ilişki bulunmaktadır. Ayrıca popülarite - bpm  , yıl - enerji ve bpm - yıl değişkeni ikili olarak kendi içlerinde nötr ilişkiye sahiptir.
+Grafiğe baktığımızda en yüksek pozitif ilişkinin enerji ve desibel değişkenleri arasında bulunduğu görülmektedir. Enerji ve akustik değişkenleri arasında ise en yüksek negatif ilişki bulunmaktadır. Ayrıca popülarite- bpm  , yıl - enerji ve bpm - yıl değişkeni ikili olarak kendi içlerinde nötr ilişkiye sahiptir.
 
 
 ### Şekil 2: Popülerlik değişkeni, Scatterplot kullanılarak altı farklı değişkenle karşılaştırılmıştır.
@@ -148,19 +148,19 @@ plott9<-ggplot(spotify_dataframe, aes(x=speechiness, y=popularity))  +
 
 ![](https://github.com/iamagc/Top-100-Most-Streamed-Songs-on-Spotify-Spotify-Data-Visualization/blob/main/figures/second.png)
 
-Grafiğe baktığımızda ,
+Grafiğe baktığımızda,
 
-müziğin enerjisi arttıkça popüleritesinin azda olsa düştüğü görülmektedir.
+Müziğin enerjisi arttıkça popüleritesinin azda olsa düştüğü görülmektedir.
 
-akustik değerinin düşük olduğu kısımlarda popülerliğin yüksek olduğu görülmektedir , akustik değeri arttıkça popülarite artıyor
+Akustik değerinin düşük olduğu kısımlarda popülerliğin yüksek olduğu görülmektedir , akustik değeri arttıkça popülarite artıyor
 
-dans edilebilirlik değeri değişsede popülerlik değeri genellikle 80-90 arasında yoğunlaşmıştır.
+Dans edilebilirlik değeri değişse de popülerlik değeri genellikle 80-90 arasında yoğunlaşmıştır.
 
-desibel değerinin -7.5 ve -2.5 olduğu yerlerde popülerlik değerlerinin yoğunlaştığı görülmektedir.
+Desibel değerinin -7.5 ve -2.5 olduğu yerlerde popülerlik değerlerinin yoğunlaştığı görülmektedir.
 
-canlılık değerinin 0-20 aralığında popülerlik değerinin 70-90 arasında yoğunlatığı görülmektedir.
+Canlılık değerinin 0-20 aralığında popülerlik değerinin 70-90 arasında yoğunlaştığı görülmektedir.
 
-valans değeri değişsede popülerlik genellikle belirli bir bölgede yoğunlaşmıştır.
+Valans değeri değişse de popülerlik genellikle belirli bir bölgede yoğunlaşmıştır.
 
 
 ### Şekil 3: Popülarite, bpm ve enerji değişkenlerinin kesişimi, Upset grafiğiyle karşılaştırılmıştır.
@@ -184,15 +184,15 @@ upset(fromList(listInput), order.by = "freq",sets.bar.color=c("maroon","blue","o
 ![](https://github.com/iamagc/Top-100-Most-Streamed-Songs-on-Spotify-Spotify-Data-Visualization/blob/main/figures/third.png)
 
 
-Upset grafiği sayesinde ,
+Upset grafiği sayesinde,
 
-popülerlik , bpm ve enerji değişkenleri arasında kesişim değerinin 9 olduğu
+Popülerlik, bpm ve enerji değişkenleri arasında kesişim değerinin 9 olduğu
 
-popülerlik ve enerji değişkenleri arasında kesişim değerinin 9 olduğu
+Popülerlik ve enerji değişkenleri arasında kesişim değerinin 9 olduğu
 
-popülerlik ve bpm değişkenleri arasında kesişim değerinin 1 olduğu 
+Popülerlik ve bpm değişkenleri arasında kesişim değerinin 1 olduğu 
 
-enerji ve bpm değişkenleri arasında kesişim değerinin 2 
+Enerji ve bpm değişkenleri arasında kesişim değerinin 2 
 
 olduğu görülmektedir
 
@@ -219,8 +219,5 @@ ggplot(selecteddata1, aes(x = reorder(artist, -popularity), y = popularity)) +
 ![](https://github.com/iamagc/Top-100-Most-Streamed-Songs-on-Spotify-Spotify-Data-Visualization/blob/main/figures/fourth.png)
 
 
-Grafiğe baktığımızda en popüler 10 sanatçının popülerlik sıralamasını görmekteyiz. Aralarında çok az fark bulunsada en düşük popülerliğe The Chainsmokers en yüksek popürlerliğe ise The Weeknd sahiptir.
-
-
-
+Grafiğe baktığımızda en popüler 10 sanatçının popülerlik sıralamasını görmekteyiz. Aralarında çok az fark bulunsa da en düşük popülerliğe The Chainsmokers en yüksek popürlerliğe ise The Weeknd sahiptir.
 
