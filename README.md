@@ -1,29 +1,29 @@
-# Top-100-Most-Streamed-Songs-on-Spotify-Spotify-Data-Visualization
+# Spotify'da En Çok Dinlenen 100 Şarkı Veri Setinin Görselleştirilmesi
 
 
-## Data
+## Veri Seti
 
-The 100 most streamed songs in the world between 1975 and 2021 by Spotify. This dataset has several variables related to songs. In this study, the Spotify dataset was examined with data visualization methods. Our dataset has 100 songs and 14 variables.
+Spotify tarafından 1975 ile 2021 arasında dünyada en çok dinlenen 100 şarkı. Bu veri kümesi şarkılarla ilgili çeşitli değişkenlere sahiptir. Bu çalışmada Spotify veri seti veri görselleştirme yöntemleri ile incelenmiştir. Veri setimizde 100 şarkı ve 14 değişken var.
 
-In this project,
+Bu projede,
 
-• The popularity variable was compared with six different variables using Scatterplot.
+• Popülarite değişkeni, Scatterplot kullanılarak altı farklı değişkenle karşılaştırıldı.
 
-• The intersection of popularity, bpm and energy variables was compared with the Upset plot.
+• Popülarite, bpm ve enerji değişkenlerinin kesişimi, Upset grafiği ile karşılaştırıldı.
 
-• The correlation relationship between six variables was examined.
+• Altı değişken arasındaki korelasyon ilişkisi incelenmiştir.
 
-• The popularity of the 10 most popular artists is compared.
+• En popüler 10 sanatçının popülaritesi karşılaştırılır.
 
-• The three highest types, the popularity-energy relationship, were visualized.
+• En yüksek üç tür olan popülerlik-enerji ilişkisi görselleştirildi.
 
-• The bpm of the three highest species were compared.
+• En yüksek üç türün bpm'si karşılaştırıldı.
 
 
-## Packages 
+## Paketler
 
 ```
-# Install Packages 
+# Gerekli paketlerin yüklenmesi ve çağırılması
 
 install.packages("readr")
 install.packages("MASS")
@@ -49,9 +49,9 @@ head(spotify_dataframe)
 ```
 
 
-## Figures
+## Şekiller
 
-### Figure 1: The correlation relationship between six variables was examined.
+### Şekil 1: Altı değişken arasındaki korelasyon ilişkisi incelenmiştir.
 
 ```
 bpm<-spotify_dataframe$beats.per.minute
@@ -62,12 +62,12 @@ popularity<-spotify_dataframe$popularity
 loudness.dB<-spotify_dataframe$loudness.dB
 
 
-#Let's import numeric variables into a new dataframe
+#Sayısal değişkenleri yeni bir veri çerçevesine aktaralım
 
 new_spo_dataset<-data.frame(bpm,year,acousticness,energy
                             ,popularity,loudness.dB)
 
-#Let's plot correlation plot
+#Korelasyon grafiğini çizelim
 
 #https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html
 par(mfrow = c(2, 2))
@@ -78,7 +78,7 @@ corrplott2<-corrplot(new_spo_dataset.cor, method = 'color', order = 'AOE')
 
 grid.arrange( corrplott1,corrplott2,ncol=2,top="Main Title")
 
-#Heatmap
+#Sıcaklık haritası
 
 heatmap(new_spo_dataset.cor)
 ```
@@ -86,7 +86,7 @@ heatmap(new_spo_dataset.cor)
 ![](https://github.com/iamagc/Top-100-Most-Streamed-Songs-on-Spotify-Spotify-Data-Visualization/blob/main/plots/1.png)
 
 
-### Figure 2: The popularity variable was compared with six different variables using Scatterplot.
+### Şekil 2: Popülerlik değişkeni, Scatterplot kullanılarak altı farklı değişkenle karşılaştırıldı.
 
 ```
 bpm<-spotify_dataframe$beats.per.minute
@@ -100,7 +100,7 @@ liveness<-spotify_dataframe$liveness
 valance<-spotify_dataframe$valance
 speechiness<-spotify_dataframe$speechiness
 
-#Should be seen as par(mfrow = c(3, 3))
+#par(mfrow = c(3, 3)) olarak görülmeli
 
 par(mfrow = c(2, 3))
 
@@ -147,7 +147,7 @@ plott9<-ggplot(spotify_dataframe, aes(x=speechiness, y=popularity))  +
 ![](https://github.com/iamagc/Top-100-Most-Streamed-Songs-on-Spotify-Spotify-Data-Visualization/blob/main/plots/2.png)
 
 
-### Figure 3: The intersection of popularity, bpm and energy variables was compared with the Upset plot.
+### Şekil 3: Popülarite, bpm ve enerji değişkenlerinin kesişimi, Upset grafiğiyle karşılaştırıldı.
 
 ```
 install.packages("UpsetR")
@@ -167,7 +167,7 @@ upset(fromList(listInput), order.by = "freq",sets.bar.color=c("maroon","blue","o
 
 ![](https://github.com/iamagc/Top-100-Most-Streamed-Songs-on-Spotify-Spotify-Data-Visualization/blob/main/plots/3.png)
 
-### Figure 4: The popularity of the 10 most popular artists is compared.
+### Şekil 4: En popüler 10 sanatçının popülaritesi karşılaştırılıyor.
 
 ```
 ggplot(selecteddata1, aes(x = reorder(artist, -popularity), y = popularity)) +
