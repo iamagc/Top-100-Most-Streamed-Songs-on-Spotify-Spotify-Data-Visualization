@@ -150,9 +150,9 @@ plott9<-ggplot(spotify_dataframe, aes(x=speechiness, y=popularity))  +
 
 Grafiğe baktığımızda ,
 
-enerji arttıkça popülerliğin arttığı yüksek enerji yüksek pöpülerlik kısmında yoğunlaşma bulunuyor.
+müziğin enerjisi arttıkça popüleritesinin azda olsa düştüğü görülmektedir.
 
-akustik değerinin düşük olduğu kısımlarda popülerliğin yüksek olduğu görülmektedir.
+akustik değerinin düşük olduğu kısımlarda popülerliğin yüksek olduğu görülmektedir , akustik değeri arttıkça popülarite artıyor
 
 dans edilebilirlik değeri değişsede popülerlik değeri genellikle 80-90 arasında yoğunlaşmıştır.
 
