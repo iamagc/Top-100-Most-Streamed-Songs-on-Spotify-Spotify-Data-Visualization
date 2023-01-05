@@ -1,6 +1,6 @@
 # Spotify'da En Çok Dinlenen 100 Şarkı Veri Setinin Görselleştirilmesi
 
-Bu proje , Eskişehir Teknik Üniversitesi İstatistik Bölümü lisans programında 2022-2023 Güz döneminde yürütülen Veri Görselleştirme dersi dönem sonu   projesi  kapsamında yapılmıştır. Spotify tarafından dünyanın en çok dinlenen 100 şarkısı. Bu veri kümesi şarkılarla ilgili çeşitli değişkenlere sahiptir. Bu çalışmada Spotify veri seti veri görselleştirme yöntemleri ile incelenmiştir. Veri setimizde 100 şarkı ve 14 değişken var. 
+Bu proje , Eskişehir Teknik Üniversitesi İstatistik Bölümü lisans programında 2022-2023 Güz döneminde yürütülen Veri Görselleştirme dersi dönem sonu   projesi  kapsamında yapılmıştır. Spotify tarafından dünyanın en çok dinlenen 100 şarkısı. Bu veri kümesi şarkılarla ilgili çeşitli değişkenlere sahiptir. Bu çalışmada Spotify veri seti veri görselleştirme yöntemleri ile araştırılmıştır. Veri setimizde 100 şarkı ve 14 değişken var. 
 
 
 ## Veri Seti
