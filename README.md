@@ -88,7 +88,7 @@ heatmap(new_spo_dataset.cor)
 ![](https://github.com/iamagc/Top-100-Most-Streamed-Songs-on-Spotify-Spotify-Data-Visualization/blob/main/figures/one.png)
 
 
-Grafiğe baktığımızda enerji ve desibel değişkenleri arasında en yüksek pozitif ilişkinin bulunduğu görülmektedir. Enerji ve akustik değişkenleri arasında ise en yüksek negatif ilişki bulunkmaktadır. Ayrıca popülarite - bpm  , yıl - enerji ve bpm - yıl değişkeni ikili olarak kendi içlerinde nötr ilişkiye sahiptir.
+Grafiğe baktığımızda en yüksek pozitif ilişkinin enerji ve desibel değişkenleri arasında bulunduğu görülmektedir. Enerji ve akustik değişkenleri arasında ise en yüksek negatif ilişki bulunmaktadır. Ayrıca popülarite - bpm  , yıl - enerji ve bpm - yıl değişkeni ikili olarak kendi içlerinde nötr ilişkiye sahiptir.
 
 
 ### Şekil 2: Popülerlik değişkeni, Scatterplot kullanılarak altı farklı değişkenle karşılaştırılmıştır.
